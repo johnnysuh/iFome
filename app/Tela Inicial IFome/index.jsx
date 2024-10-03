@@ -18,7 +18,7 @@ export default TelaInicialIfome = ({navigation}) => {
             <View style={styles.container}>
                 <Pressable onPress={() => navigation.navigate('Carrinho')} style={{display: "flex", flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-end', marginTop: 10, marginRight: 10}}>
                     <Image source={{uri: "https://cdn-icons-png.flaticon.com/512/6493/6493694.png"}} style={{width: 30, height: 30}}/>
-                    <Text style={{color: "#ff0000"}}>{carrinho.length} itens</Text>
+                    <Text style={{color: "#e1462b"}}>{carrinho.length} itens</Text>
                 </Pressable>
                 <FlatList
                     data={PRODUTOS}

@@ -10,11 +10,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
         height: 290,
         borderRadius: 10,
-        padding: 5,
+        padding: 10,
         marginBottom: 10,
         width: "90%",
         alignSelf: 'center',
         marginTop: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+        elevation: 3,
     },
     nome: {
         alignSelf: "flex-start",
@@ -25,17 +30,13 @@ const styles = StyleSheet.create({
         alignSelf: "flex-start",
         fontSize: 12,
         color: "#afafaf"
+        
     }
-
-
-
 })
 
 
 export default ItemIfome = ({ nome, imagem, preco, local }) => {
     const {carrinho, setCarrinho} = useContext(AppContext)
-
-
 
     return (
         <View style={styles.container}>

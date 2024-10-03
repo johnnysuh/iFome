@@ -8,7 +8,7 @@ const ItemCarrinho = ({ item }) => {
         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between", alignItems: 'center', width: 300, alignSelf: "center", borderBottomWidth: 1, borderBottomColor: "#afafaf", padding: 10 }}>
             <View>
                 <Text>{item.nome}</Text>
-                <Text style={{color: '#afafaf'}}>{item.local}</Text>
+                <Text style={{color: '#e1462b'}}>{item.local}</Text>
             </View>
 
             <Text style={{fontWeight: 'bold', fontSize: 16}}>R${item.preco.toFixed(2)}</Text>
@@ -27,7 +27,6 @@ export default TelaCarrinhoIfome = () => {
         <View>
             <FlatList
                 data={carrinho}
-                // renderItem={({ item }) => <ItemIfome imagem={item.imagem} local={item.local} nome={item.nome} preco={item.preco} />}
                 renderItem={({ item }) => <ItemCarrinho item={item} />}
                 keyExtractor={item => item.id}
                 style={{ maxHeight: 500 }}
